@@ -214,10 +214,10 @@ a {
 
 #presents {
     position:absolute;
-    top:-20%;
-    left:-10%;
-    width:150px; 
-    height:150px;
+    top:-80px;
+    left:-80px;
+    width:200px; 
+    height:200px;
     -webkit-animation-name: rotate; 
     -webkit-animation-duration: 12s; 
     -webkit-animation-iteration-count: infinite;
@@ -653,6 +653,24 @@ a {
 		right: 0;
 		height: 35px;
 	}
+
+	#presents {
+    position: relative;
+    margin-left: 45%;
+    top: 30px;
+    width:50%; 
+    height:auto;
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 12s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    transform-origin: 50% 50%;
+	}
+
+	@-webkit-keyframes rotate {
+    	from {-webkit-transform: rotate(360deg);}
+    	to {-webkit-transform: rotate(0deg);}
+	}
 	
 	#loading_screen_text {
 		font-size: 80vmin;
@@ -666,7 +684,7 @@ a {
 		height: auto;
 		width: auto;
 		left: auto;
-		top: auto;
+		top: 48px;
 		display: inline-block;
 	}
 	#main_title {
@@ -779,7 +797,9 @@ a {
 		top: 0;
 		margin-top: 60px;
 	}
-
+	#strikethrough {
+		text-decoration: line-through;
+	}
 	
 
 	#pointer {
